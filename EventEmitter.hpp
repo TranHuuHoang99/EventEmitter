@@ -59,7 +59,7 @@ class EventEmitter {
                     ret = static_cast<Listener<Args...>*>(i);
                     ret->callback(args...);
                 }
-                delete ret;
+                // delete ret;
             } else {
                 cerr << "Event hasn't been register" << endl;
                 return;
